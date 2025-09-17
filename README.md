@@ -2,7 +2,8 @@
 
 This repository demonstrates how to use **VLOOKUP** and **XLOOKUP** in Excel to search and retrieve data from a table.
 
-```excel
+`**VLOOKUP**
+
 =VLOOKUP(101, A2:C20, 2, FALSE) 
 // Searches for value 101 in the first column of A2:C20
 // Returns the value from column 2 in the same row
@@ -12,6 +13,8 @@ This repository demonstrates how to use **VLOOKUP** and **XLOOKUP** in Excel to 
 // Searches for "Apple" in the first column of A2:D20
 // Returns the value from column 4
 // TRUE → Approximate match (data must be sorted)
+
+`**XLOOKUP**
 
 =XLOOKUP(101, A2:A20, B2:B20, "Not Found") 
 // Looks for 101 in column A

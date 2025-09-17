@@ -3,10 +3,10 @@
 This repository demonstrates how to use **VLOOKUP**, **HLOOKUP**, and **XLOOKUP** in Excel to search and retrieve data from a table.  
 These functions are essential for **data analysis, reporting, and dynamic dashboards**.
 
----
-
 ## 📌 VLOOKUP (Vertical Lookup)
+
 ```excel
+
 =VLOOKUP(101, A2:C20, 2, FALSE)
 // Searches for value 101 in the first column of A2:C20
 // Returns the value from column 2 in the same row
@@ -17,7 +17,9 @@ These functions are essential for **data analysis, reporting, and dynamic dashbo
 // Returns the value from column 4
 // TRUE → Approximate match (data must be sorted)
 
-**FGSG**
+```
+
+**HLOOKUP**
 
 =HLOOKUP(101, A1:Z3, 2, FALSE)
 // Searches for value 101 in the first row of A1:Z3
@@ -27,7 +29,7 @@ These functions are essential for **data analysis, reporting, and dynamic dashbo
 =HLOOKUP("Sales", A1:Z3, 3, TRUE)
 // Searches for "Sales" in the first row of A1:Z3
 
-SDFDS
+**XLOOKUP**
 
 =XLOOKUP(101, A2:A20, B2:B20, "Not Found")
 // Looks for 101 in column A

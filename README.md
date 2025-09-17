@@ -1,24 +1,25 @@
-# Excel Practice Projects 📊
+# 🔎 Excel Lookup Functions (VLOOKUP + XLOOKUP)
 
-This repository contains my **Excel practice work** including formulas, functions, and small projects.  
-The goal of this repo is to showcase my learning journey in **Data Analysis using Excel**.
+This repository demonstrates how to use **VLOOKUP** and **XLOOKUP** in Excel to search and retrieve data from a table.
 
----
-
-## 🔑 Topics Covered
-- Basic Excel Formulas (SUM, AVERAGE, COUNT, IF, etc.)
-- Lookup Functions (VLOOKUP, HLOOKUP, INDEX, MATCH, XLOOKUP)
-- Text Functions (LEFT, RIGHT, MID, CONCATENATE, TRIM)
-- Date & Time Functions (TODAY, NOW, DATEDIF, EOMONTH)
-- Conditional Formatting
-- Pivot Tables & Charts
-- Data Cleaning Examples
-- Practice Datasets & Solutions
-
----
-
-## 📌 Example: VLOOKUP
 ```excel
-=VLOOKUP(102, A2:C4, 2, FALSE)
+=VLOOKUP(101, A2:C20, 2, FALSE) 
+// Searches for value 101 in the first column of A2:C20
+// Returns the value from column 2 in the same row
+// FALSE → Exact match required
 
+=VLOOKUP("Apple", A2:D20, 4, TRUE) 
+// Searches for "Apple" in the first column of A2:D20
+// Returns the value from column 4
+// TRUE → Approximate match (data must be sorted)
 
+=XLOOKUP(101, A2:A20, B2:B20, "Not Found") 
+// Looks for 101 in column A
+// Returns corresponding value from column B
+// If not found → shows "Not Found"
+
+=XLOOKUP("Apple", B2:B20, D2:D20, "No Match", 0, -1) 
+// Looks for "Apple" in column B
+// Returns corresponding value from column D
+// If not found → shows "No Match"
+// 0 → Exact match, -1 → Search from bottom to top
